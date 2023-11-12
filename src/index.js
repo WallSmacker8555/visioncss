@@ -63,7 +63,7 @@ async function getAPIresponse() {
         });
 
         responseText = responseText + chatCompletion.choices[0].message.content;
-        responseText = responseText + '\n';
+        responseText = responseText + '\n\n';
 
     }
 
