@@ -43,7 +43,7 @@ async function getAPIresponse() {
 
     for (let i = 0; i < elements.length; i++) {
         const elem_typ = $(elements[i]).prop('tagName');
-        console.log(elem_typ);
+        //console.log(elem_typ);
         const originalClassName = $(elements[i]).attr('class');
         $(elements[i]).addClass(classNames[i]);
         $(elements[i]).removeClass(originalClassName);
@@ -79,5 +79,5 @@ async function getAPIresponse() {
     const modifiedHTML = dom.serialize();
     fs.writeFileSync(htmlpath, modifiedHTML);
     fs.appendFileSync(csspath, responseText);
-    console.log('Wait a minute, it actually worked. I thought you were a terrible programmer.')
+    console.log('Wait a minute, it actually worked. You\'re better than I thought.')
 }
