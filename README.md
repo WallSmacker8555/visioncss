@@ -12,26 +12,6 @@ CSS can be really difficult, especially for beginners. You think you're doing on
 
 VisionCSS allows users to write class names for HTML elements that have "functions." By formatting their class names in the following way: 'vision(className, desiredStyle)' the user can generate styles for a desired element using only natural language as input.
 
-## How I built it
-
-I created VisionCSS in the form of an npm package that is publicly available right now as you are reading these words. The links to the npm and GitHub pages will describe how to get started with VisionCSS. VisionCSS uses the OpenAI API to generate CSS styles based on natural language input. The user need not specify the type of element or where in the document the styles should be applied. All the user needs to do is use the vision function so VisionCSS can generate styles accordingly.
-
-## Challenges I ran into
-
-When running JavaScript in a Node.js environment, it's not possible to access HTML documents via the DOM as you would in a browser environment. This is one of the key hurdles I had to overcome in order to access HTML elements whose class names were using the vision function.
-
-Additionally, engineering the OpenAI prompt was somewhat tedious for me to get a response that had a compatible format.
-
-## What's next for VisionCSS
-
-#### UTILITY CLASS CONVERSION
-
-I want to extend the capability of VisionCSS so that it can convert vision functions into utility classes like Tailwind CSS.
-
-#### COMMENT GENERATION
-
-To enhance the user's understanding of the styles that are being generated for them, I seek to include comments within the CSS style selectors that describe what effect each style has.
-
 ## How to use VisionCSS
 
 In order to use VisionCSS you will need a key for the OpenAI API.
@@ -108,3 +88,13 @@ Your HTML file will look like this:
 </body>
 </html>
 ```
+
+## What's next for VisionCSS
+
+#### UTILITY CLASS CONVERSION
+
+I want to extend the capability of VisionCSS so that it can convert vision functions into utility classes like Tailwind CSS.
+
+#### COMMENT GENERATION
+
+To enhance the user's understanding of the styles that are being generated for them, I seek to include comments within the CSS style selectors that describe what effect each style has.
